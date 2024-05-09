@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
     <title>ldsc</title>
 </head>
 <body>
-    
-    <p>
-        frase.
+    <div class="contenedor">
+        <h1>¡Bienvenido a nuestra página!</h1>
+        <p>Por favor, ingresa tu nombre para recibir un saludo personalizado:</p>
         
-    </p>
-</body>
+        <!-- Formulario para ingresar el nombre del usuario -->
+        <form id="nombreForm">
+            <input type="text" id="nombreUsuario" placeholder="Ingresa tu nombre" required>
+            <button type="submit">Enviar</button>
+        </form>
+        
+        <!-- Saludo personalizado -->
+        <div id="saludo">
+            <p>¡Hola, <span id="nombreSaludo"></span>! ¡Bienvenido a nuestra página web!</p>
+        </div>
+    </div>
+
+    <script src="/javascript/animate.js"></script>
 </html>
